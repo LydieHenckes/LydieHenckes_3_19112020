@@ -81,3 +81,358 @@ h1, h2, h3, h4, h5, h6 {
 :any-link, :-webkit-any-link {
   color: #000;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.location {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+footer {
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+}
+
+footer .footer__list a span, footer .footer__list a h3 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.booking__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  color: #fff;
+  border-radius: 2rem;
+  background-color: #FF79DA;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__logo {
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+footer .footer__title {
+  margin-bottom: 1.4rem;
+  font-size: 1.1rem;
+}
+
+.list-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.list-footer__item {
+  margin-bottom: 0.5rem;
+}
+
+.item-footer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.item-footer__icon {
+  display: block;
+  width: 1.5rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 0px auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1340px;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
+.location {
+  display: block;
+  background-color: #EAEAEA;
+  padding: 1rem;
+  text-align: center;
+}
+
+.location__icon {
+  margin-right: 0.5rem;
+}
+
+.booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F6F6F6;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking__title {
+  margin: 0.6rem 2rem;
+}
+
+.booking h2, .booking p {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.booking p {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.2rem;
+}
+
+.booking__btn {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.functioning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3.125rem;
+  padding-bottom: 2.5rem;
+}
+
+.functioning__title {
+  margin-bottom: 1.875rem;
+}
+
+.step-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.step-list__item {
+  margin-bottom: 1.5rem;
+  height: 4.6875rem;
+  width: 100%;
+  margin-left: 0.75rem;
+  background-color: #F6F6F6;
+}
+
+.item-step {
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.15);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.item-step:hover {
+  background-color: #F5EDFF;
+}
+
+.item-step:hover .item-step__icon {
+  color: #9356DC;
+}
+
+.item-step__num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #fff;
+  position: absolute;
+  left: -0.6rem;
+}
+
+.item-step__icon {
+  margin-left: 1.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 3rem;
+          flex: 0 0 3rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.item-step__action {
+  justify-self: flex-start;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.restaurants__title {
+  margin-bottom: 1.4rem;
+}
+
+.list-restaurant {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 16rem 16rem 16rem 16rem;
+      grid-template-rows: 16rem 16rem 16rem 16rem;
+  grid-row-gap: 1.2rem;
+}
+
+.list-restaurant__frame {
+  border-radius: 1rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.item-restaurant {
+  height: 100%;
+}
+
+.item-restaurant__text {
+  height: 5rem;
+  padding: 0.75rem;
+}
+
+.item-restaurant__img {
+  min-height: 11rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-restaurant__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.text-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-restaurant__detail {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.text-restaurant__icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2rem;
+          flex: 0 0 2rem;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.detail-restaurant {
+  list-style: none;
+}
+
+.detail-restaurant__name {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}

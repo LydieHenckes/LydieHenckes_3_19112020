@@ -1,0 +1,24 @@
+@mixin sm{
+	@media (min-width: map-get($breakpoints, sm-screen)){
+		@content;
+	}
+}
+@mixin md{
+	@media (min-width: map-get($breakpoints, md-screen)){
+		@content;
+	}
+}
+@mixin lg{
+	@media (min-width: map-get($breakpoints, lg-screen)){
+		@content;
+	}
+}
+@mixin xl{
+	@media (min-width: map-get($breakpoints, xl-screen)){
+		@content;
+	}
+}
+@mixin style-p{
+	color: rgba($color: #000000, $alpha: 0.7);
+	line-height: 1.2rem;
+}

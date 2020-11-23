@@ -1,0 +1,29 @@
+footer {
+	background-color: $colour-bg-footer;
+	@extend %font-footer;
+	padding-top: 1.6rem;
+	padding-bottom: 1.6rem;
+	.footer__title{
+		margin-bottom: 1.4rem;
+		font-size: 1.1rem;
+	}
+ }
+ .list-footer{
+	 display:flex;
+	 flex-direction: column;
+	 &__item{
+		 margin-bottom: 0.5rem;
+	 }
+ }
+ .item-footer{
+	 display: inline-flex;
+	&__icon{
+		display: block;
+		width: 1.5rem;
+		text-align: center;
+		margin-right: 0.5rem;
+	}
+ }
+ footer .footer__list a span, footer .footer__list a h3 {
+	@extend %font-footer-elements;
+ }
