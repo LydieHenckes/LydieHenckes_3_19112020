@@ -1,0 +1,151 @@
+.container-page {
+	padding-left: 0.9rem;
+	padding-right: 0.9rem;
+
+	margin: 0px auto;
+	@include sm{
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	@include md{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	@include lg{
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+	@include xl{
+		max-width: 1340px;
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+ }
+.carte{
+//	position: relative;
+	&__img{
+		position: relative;
+		overflow: hidden;
+		height: 16.25rem;
+		img{
+			position: absolute;
+			object-fit: cover;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&__menu{
+//		position: absolute;
+//		top: 13.25rem;
+		background-color: $colour-bg-restautants;
+		border-radius: 2.5rem 2.5rem 0 0;
+	
+	}
+}
+.menu{
+	display: flex;
+	flex-direction: column;
+	&__title{
+		display: flex;
+		justify-content: space-between;
+		padding-top: 2.125rem;
+		padding-bottom: 2.125rem;
+		@extend %font-title;
+		padding-left: 0.5rem;
+		i{
+			width: 3.5rem;
+			text-align: center;
+			color: rgba($color: #000000, $alpha: 0.6);
+		}
+	}
+	&__categories{					//=category-list
+		//padding-bottom: 1.3rem;
+	}
+	&__btn{
+		@extend %btn;
+		margin-top: 0.5rem;
+		margin-bottom: 4.375rem;
+		width: 12rem;
+		justify-self: center;
+		align-self: center;
+	
+	}
+}
+.category-list{
+	display: flex;
+	flex-direction: column;
+	&__item{  					//=category
+		margin-bottom: 2.75rem;
+	}
+}
+.category{
+	display: flex;
+	flex-direction: column;
+	&__title{
+		margin-bottom: 0.5rem;
+		padding-left: 0.5rem;
+		color: rgba($color: #000000, $alpha: 0.7);
+	}
+	&__line{
+		height: 3px;
+		width: 2.5rem;
+		background-color: $colour-tertiary;
+		margin-left: 0.5rem;
+	}
+	&__dishlist{  //=list-dish
+
+	}
+}
+.list-dish{
+	&__item{		//=item
+		margin-top: 0.9rem;
+		padding-left: 0.5rem;
+	}
+
+}
+.item{
+	display: flex;
+	align-items: center;
+	height: 4.375rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	background-color: $colour-bg-item;
+	
+	&__name{
+		flex: 1 1 auto;
+		li{
+			&:first-child{
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+			}
+			&:last-child{
+				font-size: 0.85rem;
+				color: rgba($color: #000000, $alpha: 0.7);
+			}
+		}
+	}
+	&__price{
+		flex: 0 0 3.75rem;
+		padding-top: 1.25rem;
+		text-align: center;
+		font-weight: 700;
+	}
+	&__checked{
+		flex: 0 0 3.75rem;
+		justify-self: center;
+		text-align: center;
+		background-color: $colour-tertiary;
+		color: $color-text-contrast;
+		height: 100%;
+		width: 100%;
+		font-size: 1.2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+

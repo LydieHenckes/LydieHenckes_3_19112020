@@ -24,6 +24,7 @@
  .location{
 	 display: block;
 	 background-color: $colour-bg-location;
+	 box-shadow: inset 0 0.7rem 0.7rem -0.7rem rgba(0,0,0,0.2);
 	 padding: 1rem;
 	@extend %font-location;
 	 text-align: center;
@@ -112,6 +113,7 @@
 	}
 	&__action{
 		justify-self: flex-start;
+		font-weight: 500;
 	}
 
 }
@@ -123,7 +125,7 @@
 	padding-bottom: 2.5rem;
 	
 	&__title{
-		margin-bottom: 1.4rem;//????????????
+		margin-bottom: 1.4rem;
 		
 	}
 }
@@ -140,7 +142,7 @@
 	}
 	
 }
-////???????????
+
 .item-restaurant{
 	height: 100%;
 	&__text{

@@ -107,7 +107,12 @@ footer .footer__list a span, footer .footer__list a h3 {
   color: #fff;
 }
 
-.booking__btn {
+.menu__title {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7rem;
+}
+
+.booking__btn, .menu__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,9 +129,20 @@ footer .footer__list a span, footer .footer__list a h3 {
           justify-content: center;
 }
 
+.header {
+  position: relative;
+}
+
 .header__logo {
   padding: 1.5rem 0 1rem 0;
   text-align: center;
+}
+
+.header__logo a {
+  font-size: 20px;
+  position: absolute;
+  left: 1.3rem;
+  top: 1.9rem;
 }
 
 footer {
@@ -205,6 +221,8 @@ footer .footer__title {
 .location {
   display: block;
   background-color: #EAEAEA;
+  -webkit-box-shadow: inset 0 0.7rem 0.7rem -0.7rem rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0.7rem 0.7rem -0.7rem rgba(0, 0, 0, 0.2);
   padding: 1rem;
   text-align: center;
 }
@@ -340,6 +358,7 @@ footer .footer__title {
 
 .item-step__action {
   justify-self: flex-start;
+  font-weight: 500;
 }
 
 .restaurants {
@@ -435,4 +454,201 @@ footer .footer__title {
 .detail-restaurant__name {
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+.container-page {
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  margin: 0px auto;
+}
+
+@media (min-width: 576px) {
+  .container-page {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-page {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-page {
+    max-width: 1340px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.carte__img {
+  position: relative;
+  overflow: hidden;
+  height: 16.25rem;
+}
+
+.carte__img img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.carte__menu {
+  background-color: #F6F6F6;
+  border-radius: 2.5rem 2.5rem 0 0;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2.125rem;
+  padding-bottom: 2.125rem;
+  padding-left: 0.5rem;
+}
+
+.menu__title i {
+  width: 3.5rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.menu__btn {
+  margin-top: 0.5rem;
+  margin-bottom: 4.375rem;
+  width: 12rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.category-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.category-list__item {
+  margin-bottom: 2.75rem;
+}
+
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.category__title {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.category__line {
+  height: 3px;
+  width: 2.5rem;
+  background-color: #99E2D0;
+  margin-left: 0.5rem;
+}
+
+.list-dish__item {
+  margin-top: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.375rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.item__name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.item__name li:first-child {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.item__name li:last-child {
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.item__price {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 3.75rem;
+          flex: 0 0 3.75rem;
+  padding-top: 1.25rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.item__checked {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 3.75rem;
+          flex: 0 0 3.75rem;
+  justify-self: center;
+  text-align: center;
+  background-color: #99E2D0;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

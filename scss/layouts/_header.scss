@@ -1,4 +1,14 @@
-.header__logo{
-	padding: 1.5rem 0 1rem 0;
-	text-align: center;
+.header{
+	position:relative;
+	&__logo{
+		padding: 1.5rem 0 1rem 0;
+		text-align: center;
+		a{
+			font-size: 20px;
+			position: absolute;
+			left:1.3rem;
+			top: 1.9rem;
+		}
+	}
 }
+
