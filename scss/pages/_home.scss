@@ -167,22 +167,113 @@
 		}
 	}
 }
+@keyframes coeur{
+	0%{background : white;}
+	100%{
+		background: linear-gradient(0deg, $colour-secondary, $colour-primary);
 
+	}
+}
 
 
 .text-restaurant{
 	display: flex;
 	flex-direction: row;
-	
+	padding-right: 1.25rem;
 	align-items: center;
 	&__detail{
 		flex: 1 1 auto;
 	}
+	&__icon--hidden{
+		font-size: 1.5rem;
+		position: relative;
+	//	right: 24px;
+		-webkit-text-stroke: 1px transparent;
+		background: linear-gradient(0deg, $colour-secondary, $colour-primary);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 1.55rem;
+		transform: scale(0);
+		transition: transform 1000ms;
+		transform-origin: center bottom;
+	
+	}
+	&__test{
+		width: 24px;
+		position: relative;
+		height: 24px;
+		border: 1px solid black;
+		z-index: 1;
+		&:hover{
+			&::after{
+				opacity: 1;
+			}
+		}
+		&::after{
+			content:"";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(0deg, $colour-secondary, $colour-primary);
+			transition: opacity 250ms;
+			z-index: -1;
+			opacity: 0;
+		}
+
+	}
+	&__icon--test{
+		position: relative;
+		right: 0px;
+		font-size: 1.5rem;
+		color: transparent;
+		-webkit-text-stroke: 1px black;
+		z-index: 1;
+
+		&:hover{
+			&::after{
+				opacity: 1;
+			}
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			color: $colour-secondary;
+		//	-webkit-background-clip: text;
+	//		-webkit-text-fill-color: transparent;
+			font-size: 1.55rem;
+		//	opacity: 0;
+			transition: all 250ms;
+			z-index: 2;
+		}
+	}
+
 	&__icon{
-		flex: 0 0 2rem;
+		flex: 0 0 auto;
+		position: relative;
+		right: -24px;
 		font-size: 1.5rem;
 		color: rgba($colour-body-primary, $alpha: 0.7);
-		
+		-webkit-text-stroke: 1px black;
+		color: transparent;
+		transition: all 1s;
+		display: block;
+	//	Z-index: 1;
+	
+		&:hover{
+
+		-webkit-text-stroke: 1px white;
+
+			& + .text-restaurant__icon--hidden{
+				transform: scale(1);
+			}
+		}
+
 	}
 }
 .detail-restaurant{

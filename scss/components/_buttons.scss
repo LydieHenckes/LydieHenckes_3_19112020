@@ -4,7 +4,8 @@
 	padding: 0 1.25rem;
 	color: $colour-text-btn;
 	border-radius: 2rem;
-	background-color: $colour-secondary;
+	background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
+//	background-color: $colour-secondary;
 	align-items: center;
 	justify-content: center;
 }
