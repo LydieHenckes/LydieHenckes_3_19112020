@@ -5,7 +5,13 @@
 	color: $colour-text-btn;
 	border-radius: 2rem;
 	background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
-//	background-color: $colour-secondary;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
+	transition: all 1000ms;
+	box-shadow: 0 5px 1rem rgba(0,0,0,0.22);
+	&:hover{
+		box-shadow: 0 5px 1rem rgba(0,0,0,0.66);
+		background: linear-gradient(to bottom, lighten($color: $colour-secondary, $amount: 5), lighten($colour-primary, 5));
+	}
 }

@@ -13,6 +13,12 @@
 	<script src="https://kit.fontawesome.com/b7c8a5d7ce.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<div class="loader">
+		<div class="loader__item"></div>
+		<div class="loader__section section-left"></div>
+		<div class="loader__section section-right"></div>
+	</div>
+	
 	<header class="header container">
 		<div class="header__logo"><img src="img/logo/ohmyfood@2x.svg" alt=""></div>
 	</header>
@@ -24,7 +30,7 @@
 		<section class="booking container">
 			<h2 class="booking__title">Réservez le menu qui vous convient</h2>
 			<p class="booking__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-			<a href="" class="booking__btn"><span>Explorez nos restaurants</span></a>
+			<a href="#" class="booking__btn"><span>Explorez nos restaurants</span></a>
 		</section>
 		<section class="functioning container">
 			<h2 class="functioning__title">Fonctionnement</h2>
@@ -51,15 +57,18 @@
 			<div class="restaurants__list list-restaurant">
 				<a id="palette" href="source/la-palette.html" class="list-restaurant__frame item-restaurants-test">
 					<figure class="list-restaurant__item item-restaurant">
-						<div class="item-restaurant__img"><img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" ></div>
+						<div class="item-restaurant__img">
+							<img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" >
+							<div class="item-restaurant__img--flag">Nouveau</div>
+						</div>
 						<figcaption class="item-restaurant__text text-restaurant">
 							<ul class="text-restaurant__detail detail-restaurant">
 								<li class="detail-restaurant__name">La palette du goût</li>
 								<li class="detail-restaurant__area">Ménilmontant</li>
 							</ul>
-							<div class="text-restaurant__test"></div>
-							<span class="text-restaurant__icon--test"><i class="fas fa-heart"></i></span>
 							
+							<span class="text-restaurant__icon--test"><i class="fas fa-heart"></i></span>
+
 							<span class="text-restaurant__icon"><i class="fas fa-heart"></i></span>
 							<span class="text-restaurant__icon--hidden"><i class="fas fa-heart"></i></span>
 						</figcaption>	
@@ -67,7 +76,10 @@
 				</a>
 				<a id="note" href="source/la-note-enchantee.html" class="list-restaurant__frame">
 					<figure class="list-restaurant__item item-restautant">
-						<div class="item-restaurant__img"><img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" ></div>
+						<div class="item-restaurant__img">
+							<img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" >
+							<div class="item-restaurant__img--flag">Nouveau</div>
+						</div>
 						<figcaption class="item-restaurant__text text-restaurant">
 							<ul class="text-restaurant__detail detail-restaurant">
 								<li class="detail-restaurant__name">La note enchantée</li>
@@ -111,18 +123,18 @@
 	<footer class="footer container">
 		<h3 class="footer__title">ohmyfood</h3>
 		<div class="footer__list list-footer">
-			<a href="" class="list-footer__item item-footer">
+			<a href="#" class="list-footer__item item-footer">
 				<span class="item-footer__icon"><i class="fas fa-utensils"></i></span>
 				<span class="item-footer__text">Proposer un restaurant</span>
 			</a>
-			<a href="" class="list-footer__item item-footer">
+			<a href="#" class="list-footer__item item-footer">
 				<span class="item-footer__icon"><i class="fas fa-hands-helping"></i></span>
 				<span class="item-footer__text">Devenir partenaire</span>
 			</a>
-			<a href="" class="list-footer__item item-footer">
+			<a href="#" class="list-footer__item item-footer">
 				<span class="item-footer__text">Mentions légales</span>
 			</a>
-			<a href="" class="list-footer__item item-footer">
+			<a href="mailto:nullepart@openclassrooms.com" class="list-footer__item item-footer">
 				<span class="item-footer__text">Contact</i></span>
 			</a>
 		</div>

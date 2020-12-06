@@ -1,3 +1,13 @@
+@keyframes move-category{
+	from{
+		transform: translateX(-120%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+
 .container-page {
 	padding-left: 0.9rem;
 	padding-right: 0.9rem;
@@ -22,7 +32,6 @@
 	}
  }
 .carte{
-//	position: relative;
 	&__img{
 		position: relative;
 		overflow: hidden;
@@ -32,18 +41,18 @@
 			object-fit: cover;
 			top: 0;
 			left: 0;
+			right: 0;
+			bottom: 0;
 			height: 100%;
 			width: 100%;
 		}
 	}
 	&__menu{
-//		position: absolute;
-//		top: 13.25rem;
 		background-color: $colour-bg-restautants;
 		border-radius: 2.5rem 2.5rem 0 0;
 		position: relative;
 		z-index: 1;
-		top: -40px;
+		top: -2.6rem;
 	}
 }
 .menu{
@@ -64,9 +73,7 @@
 
 		}
 	}
-	&__categories{					//=category-list
-		//padding-bottom: 1.3rem;
-	}
+
 	&__btn{
 		@extend %btn;
 		margin-top: 0.5rem;
@@ -98,7 +105,18 @@
 		background-color: $colour-tertiary;
 		margin-left: 0.5rem;
 	}
+	
 }
+.category--1{
+	animation: move-category 0.5s ease-in-out 0.4s both;
+}
+.category--2{
+	animation: move-category 0.5s ease-in-out 0.6s both;
+}
+.category--3{
+	animation: move-category 0.5s ease-in-out 0.8s both;
+}
+
 .list-dish{
 	display: flex;
 	flex-direction: column;
@@ -120,51 +138,62 @@
 	
 	&__name{
 		flex: 1 1 auto;
+	
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;  // 
+
+		display: flex;
+		flex-direction: column;
 		li{
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;  // 
+		
 			&:first-child{
 				font-weight: 700;
 				margin-bottom: 0.5rem;
+
 			}
 			&:last-child{
-				font-size: 0.85rem;
+				font-size: 0.9rem; 
 				color: rgba($color: #000000, $alpha: 0.7);
 			}
 		}
 	}
 	&__price{
-		flex: 0 0 3.75rem;
+	//	flex: 0 0 3.75rem;
 		padding-top: 1.25rem;
+		width: 3.75rem;
 		text-align: center;
 		font-weight: 700;
-		transform: translateX(100%);
-		transition: all .5s ease;
+
 	}
 	&__checked{
-		flex: 0 0 3.75rem;
+		
+		flex-shrink: 0;
+		width: 0px;
 		justify-self: center;
 		text-align: center;
 		background-color: $colour-tertiary;
 		color: $color-text-contrast;
 		height: 100%;
-		width: 100%;
+		
 		font-size: 1.2rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transform: translateX(100%);
+
 		transition: all .5s ease;
 	}
+	&:hover .item__checked{
+		width: 3.75rem;
+	}
+
 }
-.item:hover .item__price{
-	transform: translateX(0%);
-	transition: all .5s ease;
-}
-.item:hover .item__checked{
-	transform: translateX(0%);
-	transition: all .5s ease;
-}
+
 .footer-page{
-	transform: translateY(-40px);
+	transform: translateY(-2.6rem);
 }
 
 

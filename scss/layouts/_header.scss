@@ -1,10 +1,11 @@
 .header{
 	position:relative;
+	z-index: 50;
 	&__logo{
 		padding: 1.5rem 0 1rem 0;
 		text-align: center;
 		a{
-			font-size: 20px;
+			font-size: 1.25rem;
 			position: absolute;
 			left:1.3rem;
 			top: 1.9rem;
