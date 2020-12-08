@@ -4,6 +4,7 @@
 	padding: 0 1.25rem;
 	color: $colour-text-btn;
 	border-radius: 2rem;
+	background: -webkit-linear-gradient(to bottom, $colour-secondary, $colour-primary);
 	background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
 	align-items: center;
 	justify-content: center;

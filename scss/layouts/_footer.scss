@@ -27,3 +27,7 @@ footer {
  footer .footer__list a span, footer .footer__list a h3 {
 	@extend %font-footer-elements;
  }
+
+ .footer-page{
+	transform: translateY(-2.6rem);
+}
